@@ -1,0 +1,90 @@
+/* Voeg deze code toe aan je eigen CSS-bestand */
+/* Inclusief Work Sans Regular (400) en Work Sans Bold (700) */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+/* Gebruik het lettertype in je stijlregels */
+* {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+html {
+    list-style-type: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "SanofiSans-Regular", sans-serif;
+    /* background-color: #FAF1E4; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-container {
+    height: 2em;
+    width: auto;
+    min-width: 35em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #7b00e6;
+    border-radius: 20px;
+}
+
+h2 {
+    color: #fff;
+}
+
+.like-text {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+#like-count {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#like-button {
+    width: 90px;
+    height: 115px;
+    border: none;
+    position: relative;
+    background: none;
+}
+
+#like-button:before,
+#like-button:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: white;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    scale: 0.5;
+}
+
+#like-button:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+#like-button.liked:before,
+#like-button.liked:after {
+    background: rgba(72, 50, 133, 1) !important;
+}
+
+
+#text {
+    font-size: 1px;
+}
